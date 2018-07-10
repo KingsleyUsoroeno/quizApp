@@ -23,7 +23,7 @@
         android:background="@drawable/rounded_butttons"
         android:text="Take New Quiz"
         android:textColor="#ffffff"
-        android:layout_margin="10dp"/>
+        android:layout_margin="12dp"/>
 
     <Button
         android:id="@+id/button_random_quiz"
