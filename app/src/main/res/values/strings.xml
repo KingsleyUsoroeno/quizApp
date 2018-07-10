@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Application Design </string>
+    <string name="app_title">Company </string>
+    <string name="page_heading">QUIZES </string>
+    <string name="question"></string>
+    <string name="header"> Random Questions</string>
+    <string name="nextQuestion"> Which Comic House produced the Movie , the Avengers : infinity War</string>
+</resources>

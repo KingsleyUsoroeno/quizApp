@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCDC"
+    tools:context="techgroup.com.quizapp.HomeActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/poster_image_new"
+        android:id="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button_next_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_random_quiz"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/rounded_butttons"
+        android:text="Take New Quiz"
+        android:textColor="#ffffff"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/button_random_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/rounded_butttons"
+        android:padding="15dp"
+        android:text="Random Quiz"
+        android:layout_margin="10dp"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5dc"
+    tools:context="techgroup.com.quizapp.RandomQuiz">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/header"
+            android:textAlignment="center"
+            android:layout_marginTop="19dp"
+            android:fontFamily="casual"
+            android:textSize="23sp" />
+
+        <TextView
+            android:id="@+id/first_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:fontFamily="Arial"
+            android:text="Who has Won the FIFA BALLON DOR most times between Messi and Ronaldo" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/first_question">
+        <!-- android:background="#2f4f4f"-->
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Messi"
+
+                android:textSize="19sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Ronaldo"
+                android:textSize="19sp" />
+
+            <RadioButton
+                android:id="@+id/none"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Both are of equal standing"
+                android:textSize="19sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/second_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radio_group"
+            android:layout_margin="10dp"
+            android:text="@string/nextQuestion"
+            android:textSize="19sp" />
+
+        <EditText
+            android:id="@+id/first_edittext_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/second_question"
+            android:layout_margin="10sp"
+            android:hint="Marvel or Dc comics"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/thirdquestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/first_edittext_answer"
+            android:layout_margin="10dp"
+            android:text="Which Programming Language is used to Build IOS apps"
+            android:textSize="19sp" />
+
+        <RadioGroup
+            android:id="@+id/second_radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/thirdquestion">
+
+            <RadioButton
+                android:id="@+id/swift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Swift"
+                android:layout_margin="10dp"
+                android:textSize="19sp" />
+
+            <RadioButton
+                android:id="@+id/java"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="java"
+                android:layout_margin="10dp"
+                android:textSize="19sp" />
+
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/fourthQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/second_radioGroup"
+            android:layout_margin="10dp"
+            android:layout_marginTop="17px"
+            android:text="Which actor played the Iconic role in the hit franchise Spectre"
+            android:textSize="19sp" />
+
+        <RadioGroup
+            android:id="@+id/third_radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fourthQuestion"
+            android:layout_margin="10dp">
+
+
+            <RadioButton
+                android:id="@+id/daniel_craig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
+                android:text="Daniel Craig"
+                android:textSize="19sp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tom Cruise"
+                android:textSize="19sp"/>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steven Amnell"
+                android:textSize="19sp"/>
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/fifth_Question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/third_radioGroup"
+            android:layout_margin="10dp"
+            android:layout_marginTop="12px"
+            android:textSize="19sp"
+            android:text="Who's Englands Top Scorer in The 2018 FIFA world cup" />
+
+        <RadioGroup
+            android:id="@+id/forth_radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fifth_Question"
+            android:layout_margin="10dp"
+            android:textSize="19sp">
+
+            <RadioButton
+                android:id="@+id/harry_kane"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Harry Kane"
+                android:textSize="19sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ashley young"
+                android:textSize="19sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steven Goldberg"
+                android:textSize="19sp" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/sixth_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/forth_radioGroup"
+            android:layout_margin="10dp"
+            android:textSize="19sp"
+            android:text="Who played the villian in the Marvel Superhero comic Black panther" />
+
+        <RadioGroup
+            android:id="@+id/fifth_radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sixth_question"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10px">
+
+            <RadioButton
+                android:id="@+id/micheal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Micheal B Jordan"
+                android:textSize="19sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zac efron"
+                android:textSize="19sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ryan Gosling"
+                android:textSize="19sp" />
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/submit_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fifth_radioGroup"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15px"
+            android:text="Submit Answer"
+            android:textColor="#ffffff"
+            android:background="@drawable/rounded_butttons"/>
+
+        <Button
+            android:id="@+id/retake_quiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/thirdquestion"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:text="Retake Quiz"
+            android:textColor="#ffffff"
+            android:background="@drawable/rounded_butttons"/>
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
+
+
+
+
